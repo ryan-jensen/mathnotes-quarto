@@ -1,0 +1,11 @@
+{
+  "hash": "7a41e182611c6c059e808ee24887b934",
+  "result": {
+    "markdown": "---\ntitle: Pascal's Triangle Coloring Primes\nautor: Ryan Jensen\nnumber-depth: 1\norder: 40\nformat:\n  html:\n    code-fold: true\n    default-image-extension: svg\n  pdf:\n    default-image-extension: pdf\n---\n\n#### Problem\nIf you haven't already done so, do [Pascal's Triangle](pascals-triangle.qmd) \nand [Pascal's Triangle Coloring](pascals-triangle-coloring.qmd) problems first.\n\nThe first few primes are 2,3,5,7,11,13. Choose a prime, and then color hexagons \ncontaining a multiple of that prime number.\n\n![Pascal's Triangle](image/pascals-triangle-16){width=80%}\n\n",
+    "supporting": [
+      "pascals-triangle-coloring-primes_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

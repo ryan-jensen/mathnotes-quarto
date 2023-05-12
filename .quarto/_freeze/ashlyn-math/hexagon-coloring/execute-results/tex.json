@@ -1,0 +1,10 @@
+{
+  "hash": "e898e568c2fc6f079e765ebe8cb872d1",
+  "result": {
+    "markdown": "---\ntitle: Hexagon Coloring\nautor: Ryan Jensen\nnumber-depth: 1\norder: 30\nformat:\n  html:\n    code-fold: true\n    default-image-extension: svg\n  pdf:\n    default-image-extension: pdf\n---\n\n#### Problem\nIf you haven't already done so, do [Pascal's Triangle](pascals-triangle.qmd) \nand [Pascal's Trinagle Coloring](pascals-triangle-coloring.qmd) problems first.\n\nThis hexagon is made by taking six copies of Pascal's Triangle, and then \nconnecting them along the diagonals containing ones. As you did in \n[Pascal's Trinagle Coloring](pascals-triangle-coloring.qmd), color all the \nsmall hexagons containing an odd number one color, and all the small hexagons \ncontaining an even number another color.\n\n\n\n![Hexagon Coloring](image/hexagon-coloring){width=80%}\n\n",
+    "supporting": [
+      "hexagon-coloring_files/figure-pdf"
+    ],
+    "filters": []
+  }
+}

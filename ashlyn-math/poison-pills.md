@@ -1,0 +1,21 @@
+---
+title: Poison Pills
+autor: Ryan Jensen
+number-depth: 1
+order: 150
+format:
+  html:
+    code-fold: true
+    default-image-extension: svg
+  pdf:
+    default-image-extension: pdf
+---
+
+
+#### Problem
+There are nine pills which are identical except one pill has a different 
+weight than the other eight. The eight identical pills are all poison and will 
+kill you. Then nineth pill weighs different than the eight and will not hurt
+you. You have a balance scale which you may use no more than three times. You
+must take a pill. Figure out which pill is safe to take.
+

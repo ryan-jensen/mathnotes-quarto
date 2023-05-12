@@ -1,0 +1,11 @@
+{
+  "hash": "1aecdcedbc82a1cb5169f1a47c2e0367",
+  "result": {
+    "markdown": "---\ntitle: Pascal's Triangle Coloring\nautor: Ryan Jensen\nnumber-depth: 1\norder: 20\nformat:\n  html:\n    code-fold: true\n    default-image-extension: svg\n  pdf:\n    default-image-extension: pdf\n---\n\n#### Problem\nIf you haven't already done so, do [Pascal's Triangle](pascals-triangle.qmd) \nproblem first.\n\nColor hexagons containing an odd number one color, and each hexagon containing\nan even number another color (or leave it white).\n\n![Pascal's Triangle](image/pascals-triangle-16){width=90%}\n\n",
+    "supporting": [
+      "pascals-triangle-coloring_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "hash": "727a742125343af34fbd9a3cf9fe75f1",
+  "result": {
+    "markdown": "---\ntitle: Hexagon Coloring Primes\nautor: Ryan Jensen\nnumber-depth: 1\norder: 50\nformat:\n  html:\n    code-fold: true\n    default-image-extension: svg\n  pdf:\n    default-image-extension: pdf\n---\n\n#### Problem\nIf you haven't already done so, do \n[Hexagon Coloring](hexagon-coloring.qmd) and\n[Pascal's Triangle Colring](pascals-triangle-coloring.qmd) first.\n\nLike you did in [Pascal's Triangle Colring](pascals-triangle-coloring.qmd),\nchoose a small prime and color all of its multiples.\n\n![Hexagon Coloring](image/hexagon-coloring){width=90%}\n\n",
+    "supporting": [
+      "hexagon-coloring-primes_files/figure-pdf"
+    ],
+    "filters": []
+  }
+}

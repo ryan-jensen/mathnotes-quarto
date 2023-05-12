@@ -1,0 +1,10 @@
+{
+  "hash": "9b15390c8b507bfb2ad77fd6ee238c7c",
+  "result": {
+    "markdown": "---\ntitle: Counting Sierpinski\nautor: Ryan Jensen\nnumber-depth: 1\norder: 100\nformat:\n  html:\n    code-fold: true\n    default-image-extension: svg\n  pdf:\n    default-image-extension: pdf\n---\n\n#### Problem\nDetermine how many total triangles there are in the figure below. \n\n\n\n![Counting Sierpinski](image/counting-sierpinski-6){width=90%}\n\n",
+    "supporting": [
+      "counting-sierpinski_files/figure-pdf"
+    ],
+    "filters": []
+  }
+}

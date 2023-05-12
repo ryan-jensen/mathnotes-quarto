@@ -1,0 +1,3 @@
+= Installing Python
+
+Here we learn how to install Python.

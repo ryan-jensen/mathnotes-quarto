@@ -1,0 +1,4 @@
+- source: project
+  netlify:
+    - id: 52d8ad40-1646-4a32-808f-afeaee39d5e6
+      url: 'https://test-mathnotes.netlify.app'

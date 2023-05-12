@@ -1,0 +1,12 @@
+---
+title: "Resume"
+format:
+  pdf: default
+  html: default
+code-tools: false
+---
+
+
+
+
+Resume here.

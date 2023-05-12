@@ -1,0 +1,32 @@
+#+title: Introduction to Python
+
+Here we learn an introduction to Python.
+
+#+begin_quote
+*Hint*
+
+Here is the hint.
+
+#+end_quote
+
+#+begin_src sh
+quarto render
+
+pwd
+
+ls -al
+#+end_src
+
+** Downloads
+:PROPERTIES:
+:CUSTOM_ID: downloads
+:END:
+** Math
+:PROPERTIES:
+:CUSTOM_ID: math
+:END:
+Here is some math, which is inline: \(f(x) = x^2\).
+
+And here is some math in display style \[
+\sum_{i=1}^n i = \frac{n(n+1)}{2}.
+\]

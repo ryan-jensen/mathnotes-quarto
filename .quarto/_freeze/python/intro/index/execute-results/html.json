@@ -1,0 +1,11 @@
+{
+  "hash": "f74ae2cfda3e9c479ad3cb9f632c4b14",
+  "result": {
+    "markdown": "---\ntitle: \"Introduction to Python\"\norder: 2\nkeep-md: true\n---\n\nHere we learn an introduction to  Python.\n\n::: {.cell execution_count=1}\n``` {.python .cell-code}\nprint(\"Hello, World!\")\n```\n\n::: {.cell-output .cell-output-stdout}\n```\nHello, World!\n```\n:::\n:::\n\n\n",
+    "supporting": [
+      "index_files/figure-html"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

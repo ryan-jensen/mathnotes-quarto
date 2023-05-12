@@ -1,0 +1,10 @@
+{
+  "hash": "a9bb5d4fc0b2816a8f54d974b25aeba4",
+  "result": {
+    "markdown": "---\ntitle: Points on a Circle\nautor: Ryan Jensen\nnumber-depth: 1\norder: 70\nformat:\n  html:\n    code-fold: true\n    default-image-extension: svg\n  pdf:\n    default-image-extension: pdf\n---\n\n#### Problem\nBelow is a circle with equally spaced points. Connect each point to every\nother point. Then find the following: \n1. the number of circles, \n2. the number of points, \n3. the number of segments, \n4. the number of triangles, \n5. the number of quadrilaterals, \n6. the number of pentagons, \n7. the number of hexagons, \n8. the number of heptagons, \n9. the number of octogons.\n\n\n\n![Points on a Circle](image/points-on-a-circle){width=\"80%\"}\n\n",
+    "supporting": [
+      "points-on-a-circle_files/figure-pdf"
+    ],
+    "filters": []
+  }
+}

@@ -1,0 +1,35 @@
+---
+title: "Counting Triangles"
+autor: "Ryan Jensen"
+jupyter: python3
+number-depth: 1
+order: 90
+format:
+  html: 
+    code-fold: true
+    default-image-extension: svg
+  pdf:
+    default-image-extension: pdf
+---
+
+#### Problem
+Determine how many total triangles there are in the figure below. Then determine how many there would be if the figure had $n$ rows instead of six.
+
+```{python}
+#| echo: false
+
+from chalk import *
+
+def mkTRow(n=1,size=1):
+    return concat(triangle(size).translate(x*size,0) for x in range(n))
+
+def mkTri(rows=1,size=1):
+    return concat(mkTRow(y,size).center_xy().translate(0,size*y*math.sqrt(3)/2) 
+      for y in range(rows+1))
+
+myTri=mkTri(rows=6)
+myTri.render_svg("image/counting-triangles-6.svg",800)
+myTri.render_pdf("image/counting-triangles-6.pdf",800)
+```
+
+![Counting Triangles](image/counting-triangles-6){width=80%}

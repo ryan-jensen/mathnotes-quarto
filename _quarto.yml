@@ -1,0 +1,109 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  page-navigation: true
+  title: "Mathnotes"
+  site-url: "https://test-mathnotes.netlify.app"
+  repo-url: "https://github.com/ryan-jensen/mathnotes"
+  reader-mode: true
+  google-analytics: "G-03CF79D67N"
+  search: 
+    location: navbar
+    type: textbox
+
+  page-footer: 
+    left: "This page is built with [Quarto](https://quarto.org)."
+    right: "&copy; 2023 Ryan Jensen"
+
+  sidebar:
+    - id: home
+      collapse: true
+      logo: mathnotes-logo.svg
+      pinned: true
+      align: center
+      style: floating
+
+    - id: python
+      collapse-level: 1
+      contents: python
+      logo: mathnotes-logo.svg
+      pinned: true
+      align: center
+      style: floating
+
+    - id: julia
+      collapse-level: 1
+      contents: julia
+      logo: mathnotes-logo.svg
+      pinned: true
+      align: center
+      style: floating
+    
+    - id: ashlyn-math
+      collapse-level: 1
+      contents: ashlyn-math
+      logo: mathnotes-logo.svg
+      pinned: true
+      align: center
+      style: floating
+
+
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: python/index.qmd
+        text: Python
+      - href: julia/index.qmd
+        text: Julia
+      - href: ashlyn-math/index.qmd
+        text: Ashlyn Math
+      - icon: person-vcard
+        href: resume.qmd
+        text: ""
+
+    right:
+      - icon: github
+        href: https://github.com/ryan-jensen/mathnotes
+
+execute: 
+  keep-md: true
+  keep-yaml: true
+
+format:
+  pdf: 
+    documentclass: scrartcl
+  commonmark:
+    keep-yaml: true
+    keep-md: true
+  org: default
+  ipynb: default
+  asciidoc: default
+  html:
+    theme: custom.scss
+    grid:
+      sidebar-width: 250px
+      body-width: 900px
+      margin-width: 300px
+    code-copy: true
+    code-line-numbers: true
+    code-tools: false
+    highlight-style: pygments
+    css: styles.css
+    toc: true
+    toc-title: Table of Contents
+    mainfont: Computer Modern Sans
+    monofont: Liberation Mono
+    fontsize: "115%"
+    cookie-consent: true
+    link-external-icon: true
+    link-external-newwindow: true
+    anchor-sections: true
+    include-in-header:
+      - text: |
+          <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/aaaakshat/cm-web-fonts@latest/fonts.css">
+
+filters:
+  - shinylive

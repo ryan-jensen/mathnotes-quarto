@@ -1,0 +1,33 @@
+= Introduction to Python
+:stem: latexmath
+
+Here we learn an introduction to Python.
+
+[TIP]
+.Hint
+====
+Here is the hint.
+====
+
+[source,bash]
+----
+quarto render
+
+pwd
+
+ls -al
+----
+
+== Downloads
+
+== Math
+
+Here is some math, which is inline: latexmath:[f(x) = x^2].
+
+And here is some math in display style
+
+[latexmath]
+++++
+
+\sum_{i=1}^n i = \frac{n(n+1)}{2}.
+++++

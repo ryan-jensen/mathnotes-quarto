@@ -1,0 +1,10 @@
+{
+  "hash": "447ffb23b2c9aa954350de7f8ad371d9",
+  "result": {
+    "markdown": "---\ntitle: Which One Doesn't Belong\nautor: Ryan Jensen\nnumber-depth: 1\norder: 120\nformat:\n  html:\n    code-fold: true\n    default-image-extension: svg\n  pdf:\n    default-image-extension: pdf\n---\n\n#### Problem\nFind which one doesn't belong.\n\n\n\n![Which One Doesn't Belong](image/wodb1){width=80%}\n\n",
+    "supporting": [
+      "wodb1_files/figure-pdf"
+    ],
+    "filters": []
+  }
+}

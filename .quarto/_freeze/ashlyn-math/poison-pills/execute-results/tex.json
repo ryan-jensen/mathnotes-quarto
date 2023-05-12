@@ -1,0 +1,10 @@
+{
+  "hash": "3a09a910885270c26a52d6eb5e9ba2c5",
+  "result": {
+    "markdown": "---\ntitle: Poison Pills\nautor: Ryan Jensen\nnumber-depth: 1\norder: 150\nformat:\n  html:\n    code-fold: true\n    default-image-extension: svg\n  pdf:\n    default-image-extension: pdf\n---\n\n#### Problem\nThere are nine pills which are identical except one pill has a different \nweight than the other eight. The eight identical pills are all poison and will \nkill you. Then nineth pill weighs different than the eight and will not hurt\nyou. You have a balance scale which you may use no more than three times. You\nmust take a pill. Figure out which pill is safe to take.\n\n",
+    "supporting": [
+      "poison-pills_files/figure-pdf"
+    ],
+    "filters": []
+  }
+}

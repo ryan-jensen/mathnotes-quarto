@@ -1,0 +1,37 @@
+---
+title: "Paths Through Squares"
+autor: "Ryan Jensen"
+jupyter: python3
+number-depth: 1
+order: 60
+format:
+  html: 
+    code-fold: true
+    default-image-extension: svg
+  pdf:
+    default-image-extension: pdf
+---
+
+#### Problem
+How many paths are there starting in the upper left square and ending
+in the bottom right square, if you are only allowed to move right or down?
+
+```{python}
+#| echo: false 
+from chalk import *
+
+def mkRow(cs=1, sl=10):
+    return hcat([square(sl) for i in range(cs)])
+
+def mkGrid(rs=1,cs=1,sl=10):
+    return vcat([mkRow(cs,sl) for i in range(rs)])
+
+def mkSquareGrid(rs=1,sl=10):
+    return mkGrid(rs,rs,sl)
+
+myS = mkSquareGrid(rs=10,sl=20)
+myS.render_svg("image/paths-through-squares.svg",800)
+myS.render_pdf("image/paths-through-squares.pdf",800)
+```
+
+![Paths](image/paths-through-squares){width=80%}

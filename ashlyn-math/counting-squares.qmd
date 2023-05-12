@@ -1,0 +1,32 @@
+---
+title: "Counting Squares"
+autor: "Ryan Jensen"
+jupyter: python3
+number-depth: 1
+order: 80
+format:
+  html: 
+    code-fold: true
+    default-image-extension: svg
+  pdf:
+    default-image-extension: pdf
+---
+
+#### Problem
+Determine how many total squares there are in the figure below. 
+
+```{python}
+#| echo: false
+
+from chalk import *
+from itertools import product
+
+def mkSquareGrid(n=1, size=1):
+    return concat(square(size).translate(x,y) for x,y in product(range(n), range(n)))
+
+myS=mkSquareGrid(6,1)
+myS.render_svg("image/counting-squares.svg",800)
+myS.render_pdf("image/counting-squares.pdf",800)
+```
+
+![Counting Sierpinski](image/counting-squares){width=80%}

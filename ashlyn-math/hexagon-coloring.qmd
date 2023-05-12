@@ -1,0 +1,49 @@
+---
+title: "Hexagon Coloring"
+autor: "Ryan Jensen"
+jupyter: python3
+number-depth: 1
+order: 30
+format:
+  html: 
+    code-fold: true
+    default-image-extension: svg
+  pdf:
+    default-image-extension: pdf
+---
+
+#### Problem
+If you haven't already done so, do [Pascal's Triangle](pascals-triangle.qmd) 
+and [Pascal's Trinagle Coloring](pascals-triangle-coloring.qmd) problems first.
+
+This hexagon is made by taking six copies of Pascal's Triangle, and then 
+connecting them along the diagonals containing ones. As you did in 
+[Pascal's Trinagle Coloring](pascals-triangle-coloring.qmd), color all the 
+small hexagons containing an odd number one color, and all the small hexagons 
+containing an even number another color.
+
+```{python}
+#| echo: false
+
+from chalk import *
+
+def mkCell(sl=1):
+    return regular_polygon(6,sl).rotate_by(1/12)
+
+def mkRow(row=0, sl =1):
+    return hcat([mkCell(sl) for i in range(row+1)])
+
+def mkTriangle(row=0, sl=1):
+    pyr=concat(
+      [mkRow(i,sl).center_xy().translate(0,3*i*sl/2) for i in range(row+1)])
+    return pyr
+
+def mkHex(rows=0,sl=1):
+    return concat([mkTriangle(rows,sl).rotate_by(i/6) for i in range(6)])
+
+myHex=mkHex(rows=15)
+myHex.render_svg("image/hexagon-coloring.svg",800)
+myHex.render_pdf("image/hexagon-coloring.pdf",800)
+```
+
+![Hexagon Coloring](image/hexagon-coloring){width=80%}

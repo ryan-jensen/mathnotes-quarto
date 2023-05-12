@@ -1,0 +1,36 @@
+---
+title: "Counting Sierpinski"
+autor: "Ryan Jensen"
+jupyter: python3
+number-depth: 1
+order: 100
+format:
+  html: 
+    code-fold: true
+    default-image-extension: svg
+  pdf:
+    default-image-extension: pdf
+---
+
+#### Problem
+Determine how many total triangles there are in the figure below. 
+
+```{python}
+#| echo: false
+
+from chalk import *
+from itertools import product
+
+def sierpinski(n: int, size: int) -> Diagram:
+    if n <= 1:
+        return triangle(size)
+    else:
+        smaller = sierpinski(n - 1, size / 2)
+        return smaller.above(smaller.beside(smaller,unit_x).center_xy())
+
+mySier=sierpinski(6,1)
+mySier.render_svg("image/counting-sierpinski-6.svg",800)
+mySier.render_pdf("image/counting-sierpinski-6.pdf",800)
+```
+
+![Counting Sierpinski](image/counting-sierpinski-6){width=90%}

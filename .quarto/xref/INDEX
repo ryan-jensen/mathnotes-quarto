@@ -2033,5 +2033,21 @@
     "index.org": "0f0367ee",
     "index.ipynb": "8bb94e36",
     "index.adoc": "2af299d5"
+  },
+  "projects/datasaurus/index.qmd": {
+    "index.html": "6af9bce0",
+    "index.tex": "0a755b3f",
+    "index.md": "da80494d",
+    "index.org": "631bd9d0",
+    "index.ipynb": "0b725e5f",
+    "index.adoc": "ec2e2eb1"
+  },
+  "projects/datasaurus/data.md": {
+    "data.html": "84bc3d6d",
+    "data.tex": "43e5a5fc",
+    "data.commonmark.md": "80bea55a",
+    "data.org": "882d5f02",
+    "data.ipynb": "9af7bb5b",
+    "data.adoc": "c512f9b2"
   }
 }

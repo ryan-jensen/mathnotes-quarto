@@ -1,0 +1,28 @@
+---
+title: "Datasaurus"
+author: "Ryan Jensen"
+order: 3
+keep-md: true
+---
+
+
+
+
+
+
+
+
+## Datasaurus
+The datasaurus is a collection of 13 sets of data points. Each set has 
+5 (almost) identical statistcs. Scatter plots reveal that while basic
+statics are the same, their look arrangement is very different. 
+
+I've modified the original datasaurs collection slightly, and applied
+persistent homology in order to differentiate some of the data sets.
+My results are below.
+
+-   [Datasaurus Slides](talk.pdf)
+-   [Datasaurus to Circle](https://youtu.be/7xpFDxnYJ-4)
+-   [Datasaurus Stats](https://youtu.be/CGvwX5lUl74)
+-   [Datasaurus Barcodes](https://youtu.be/ISpv4kQiAns)
+

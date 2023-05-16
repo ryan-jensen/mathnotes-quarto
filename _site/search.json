@@ -222,5 +222,19 @@
     "title": "Installing Julia",
     "section": "",
     "text": "Here we learn how to install Julia."
+  },
+  {
+    "objectID": "projects/datasaurus/index.html",
+    "href": "projects/datasaurus/index.html",
+    "title": "Datasaurus",
+    "section": "",
+    "text": "The datasaurus is a collection of 13 sets of data points. Each set has 5 (almost) identical statistcs. Scatter plots reveal that while basic statics are the same, their look arrangement is very different.\nI’ve modified the original datasaurs collection slightly, and applied persistent homology in order to differentiate some of the data sets. My results are below.\n\nDatasaurus Slides\nDatasaurus to Circle\nDatasaurus Stats\nDatasaurus Barcodes"
+  },
+  {
+    "objectID": "projects/datasaurus/index.html#datasaurus",
+    "href": "projects/datasaurus/index.html#datasaurus",
+    "title": "Datasaurus",
+    "section": "",
+    "text": "The datasaurus is a collection of 13 sets of data points. Each set has 5 (almost) identical statistcs. Scatter plots reveal that while basic statics are the same, their look arrangement is very different.\nI’ve modified the original datasaurs collection slightly, and applied persistent homology in order to differentiate some of the data sets. My results are below.\n\nDatasaurus Slides\nDatasaurus to Circle\nDatasaurus Stats\nDatasaurus Barcodes"
   }
 ]

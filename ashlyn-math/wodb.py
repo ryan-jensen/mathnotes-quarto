@@ -21,7 +21,8 @@ def mkWODB(a="1",b="2",c="3",d="4",fn="wodb"):
     draw.rectangle([(0, l/2), (w/2, l)], outline=(0, 0, 0), width=lw)
     
     # draw the numbers inside the boxes
-    font = ImageFont.truetype("/home/ryan/.fonts/NewCM10-Regular.otf", size=200)
+    #font = ImageFont.truetype("/home/ryan/.fonts/NewCM10-Regular.otf", size=200)
+    font = ImageFont.truetype("/usr/share/fonts/tex/cmunss.ttf", size=200)
     draw.text((w/4, l/4), a, fill=(0,0,0), anchor="mm", font=font)
     draw.text((3*w/4, l/4), b, fill=(0,0,0), anchor="mm", font=font)
     draw.text((w/4,3*l/4), c, fill=(0,0,0), anchor="mm", font=font)

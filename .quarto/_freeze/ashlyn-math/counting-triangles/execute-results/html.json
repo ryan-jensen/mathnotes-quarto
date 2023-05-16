@@ -1,7 +1,7 @@
 {
   "hash": "2d4f976fa3ba32912046ea0ac4642390",
   "result": {
-    "markdown": "---\ntitle: Counting Triangles\nautor: Ryan Jensen\nnumber-depth: 1\norder: 90\nformat:\n  html:\n    code-fold: true\n    default-image-extension: svg\n  pdf:\n    default-image-extension: pdf\n---\n\n#### Problem\nDetermine how many total triangles there are in the figure below. Then determine how many there would be if the figure had $n$ rows instead of six.\n\n\n\n![Counting Triangles](image/counting-triangles-6){width=80%}\n\n",
+    "markdown": "---\ntitle: Counting Triangles\nautor: Ryan Jensen\nnumber-depth: 1\norder: 90\nformat:\n  html:\n    code-fold: true\n    default-image-extension: svg\n  pdf:\n    default-image-extension: pdf\n---\n\n#### Problem\nDetermine how many total triangles there are in the figure below. Then determine how many there would be if the figure had $n$ rows instead of six.\n\n::: {.cell execution_count=1}\n\n::: {.cell-output .cell-output-stdout}\n```\nRender PDF requires pylatex installation.\n```\n:::\n:::\n\n\n![Counting Triangles](image/counting-triangles-6){width=80%}\n\n",
     "supporting": [
       "counting-triangles_files"
     ],

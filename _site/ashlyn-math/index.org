@@ -1,8 +1,4 @@
 #+title: Ashlyn Math Book
 
 #+author: Ryan Jensen
-* Welcome!
-:PROPERTIES:
-:CUSTOM_ID: welcome
-:END:
-Ashlyn, this is your math book.
+This is a collection of mathematics activities for my daughter Ashlyn.

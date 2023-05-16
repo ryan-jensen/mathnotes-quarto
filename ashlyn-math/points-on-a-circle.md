@@ -25,6 +25,14 @@ other point. Then find the following:
 8. the number of heptagons, 
 9. the number of octogons.
 
+::: {.cell execution_count=1}
+
+::: {.cell-output .cell-output-stdout}
+```
+Render PDF requires pylatex installation.
+```
+:::
+:::
 
 
 ![Points on a Circle](image/points-on-a-circle){width="80%"}

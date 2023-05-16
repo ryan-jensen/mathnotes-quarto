@@ -15,6 +15,14 @@ format:
 #### Problem
 Determine how many total squares there are in the figure below. 
 
+::: {.cell execution_count=1}
+
+::: {.cell-output .cell-output-stdout}
+```
+Render PDF requires pylatex installation.
+```
+:::
+:::
 
 
 ![Counting Sierpinski](image/counting-squares){width=80%}

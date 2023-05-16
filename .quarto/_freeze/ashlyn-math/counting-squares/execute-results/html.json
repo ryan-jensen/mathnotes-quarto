@@ -1,7 +1,7 @@
 {
   "hash": "6acea21edaf6e584aa036212898b1bd9",
   "result": {
-    "markdown": "---\ntitle: Counting Squares\nautor: Ryan Jensen\nnumber-depth: 1\norder: 80\nformat:\n  html:\n    code-fold: true\n    default-image-extension: svg\n  pdf:\n    default-image-extension: pdf\n---\n\n#### Problem\nDetermine how many total squares there are in the figure below. \n\n\n\n![Counting Sierpinski](image/counting-squares){width=80%}\n\n",
+    "markdown": "---\ntitle: Counting Squares\nautor: Ryan Jensen\nnumber-depth: 1\norder: 80\nformat:\n  html:\n    code-fold: true\n    default-image-extension: svg\n  pdf:\n    default-image-extension: pdf\n---\n\n#### Problem\nDetermine how many total squares there are in the figure below. \n\n::: {.cell execution_count=1}\n\n::: {.cell-output .cell-output-stdout}\n```\nRender PDF requires pylatex installation.\n```\n:::\n:::\n\n\n![Counting Sierpinski](image/counting-squares){width=80%}\n\n",
     "supporting": [
       "counting-squares_files"
     ],

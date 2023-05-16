@@ -27,6 +27,14 @@ is the next prime; circle it and then cross out all multiples of it except
 itself. Keep going until you can't cross out any more. Count the primes (circled
 numbers).
 
+::: {.cell execution_count=1}
+
+::: {.cell-output .cell-output-stdout}
+```
+Render PDF requires pylatex installation.
+```
+:::
+:::
 
 
 ![Sieve of Eratosthenes](image/sieve){width=50%}

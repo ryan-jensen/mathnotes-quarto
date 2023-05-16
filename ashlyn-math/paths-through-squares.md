@@ -16,6 +16,14 @@ format:
 How many paths are there starting in the upper left square and ending
 in the bottom right square, if you are only allowed to move right or down?
 
+::: {.cell execution_count=1}
+
+::: {.cell-output .cell-output-stdout}
+```
+Render PDF requires pylatex installation.
+```
+:::
+:::
 
 
 ![Paths](image/paths-through-squares){width=80%}

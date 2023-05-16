@@ -11,6 +11,4 @@ toc: false
 
 
 
-# Welcome!
-
-Ashlyn, this is your math book.
+This is a collection of mathematics activities for my daughter Ashlyn. 

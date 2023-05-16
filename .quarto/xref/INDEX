@@ -2017,5 +2017,21 @@
     "index.org": "6a40208a",
     "index.ipynb": "04c68a31",
     "index.adoc": "16ff4bd2"
+  },
+  "projects/level-sets/index.qmd": {
+    "index.html": "7abdb88b",
+    "index.tex": "80b1f8e7",
+    "index.md": "9b37e46b",
+    "index.org": "8da77a47",
+    "index.ipynb": "0dc88e40",
+    "index.adoc": "91f218d5"
+  },
+  "projects/index.qmd": {
+    "index.html": "58569e3a",
+    "index.tex": "ffcb4763",
+    "index.md": "19690b49",
+    "index.org": "0f0367ee",
+    "index.ipynb": "8bb94e36",
+    "index.adoc": "2af299d5"
   }
 }

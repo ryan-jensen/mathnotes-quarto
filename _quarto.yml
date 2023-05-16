@@ -49,6 +49,14 @@ website:
       align: center
       style: floating
 
+    - id: projects
+      collapse-level: 1
+      contents: projects
+      logo: mathnotes-logo.svg
+      pinned: true
+      align: center
+      style: floating
+
 
   navbar:
     left:
@@ -60,6 +68,8 @@ website:
         text: Julia
       - href: ashlyn-math/index.qmd
         text: Ashlyn Math
+      - href: projects/index.qmd
+        text: Research Projects
       - icon: person-vcard
         href: resume.qmd
         text: ""

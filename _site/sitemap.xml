@@ -1,107 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://test-mathnotes.netlify.app/index.html</loc>
-    <lastmod>2023-05-12T19:17:34.011Z</lastmod>
-  </url>
-  <url>
     <loc>https://test-mathnotes.netlify.app/python/shiny/index.html</loc>
-    <lastmod>2023-05-12T19:17:35.638Z</lastmod>
+    <lastmod>2023-05-16T19:11:43.342Z</lastmod>
   </url>
   <url>
     <loc>https://test-mathnotes.netlify.app/python/index.html</loc>
-    <lastmod>2023-05-12T19:17:42.004Z</lastmod>
-  </url>
-  <url>
-    <loc>https://test-mathnotes.netlify.app/python/r/index.html</loc>
-    <lastmod>2023-05-12T19:17:42.808Z</lastmod>
-  </url>
-  <url>
-    <loc>https://test-mathnotes.netlify.app/python/installing/index.html</loc>
-    <lastmod>2023-05-12T19:17:50.211Z</lastmod>
+    <lastmod>2023-05-16T19:11:48.533Z</lastmod>
   </url>
   <url>
     <loc>https://test-mathnotes.netlify.app/python/intro/index.html</loc>
-    <lastmod>2023-05-12T19:18:57.412Z</lastmod>
+    <lastmod>2023-05-16T19:13:18.159Z</lastmod>
+  </url>
+  <url>
+    <loc>https://test-mathnotes.netlify.app/python/installing/index.html</loc>
+    <lastmod>2023-05-16T19:13:24.104Z</lastmod>
+  </url>
+  <url>
+    <loc>https://test-mathnotes.netlify.app/python/r/index.html</loc>
+    <lastmod>2023-05-16T19:13:25.379Z</lastmod>
   </url>
   <url>
     <loc>https://test-mathnotes.netlify.app/resume.html</loc>
-    <lastmod>2023-05-12T19:18:58.055Z</lastmod>
+    <lastmod>2023-05-16T19:13:25.951Z</lastmod>
   </url>
   <url>
-    <loc>https://test-mathnotes.netlify.app/ashlyn-math/pascals-triangle-coloring.html</loc>
-    <lastmod>2023-05-12T19:19:17.058Z</lastmod>
+    <loc>https://test-mathnotes.netlify.app/projects/level-sets/index.html</loc>
+    <lastmod>2023-05-16T19:13:38.647Z</lastmod>
+  </url>
+  <url>
+    <loc>https://test-mathnotes.netlify.app/projects/index.html</loc>
+    <lastmod>2023-05-16T19:13:44.568Z</lastmod>
   </url>
   <url>
     <loc>https://test-mathnotes.netlify.app/ashlyn-math/paths-through-squares.html</loc>
-    <lastmod>2023-05-12T19:19:34.128Z</lastmod>
-  </url>
-  <url>
-    <loc>https://test-mathnotes.netlify.app/ashlyn-math/counting-squares.html</loc>
-    <lastmod>2023-05-12T19:19:49.988Z</lastmod>
-  </url>
-  <url>
-    <loc>https://test-mathnotes.netlify.app/ashlyn-math/wodb2.html</loc>
-    <lastmod>2023-05-12T19:20:02.549Z</lastmod>
-  </url>
-  <url>
-    <loc>https://test-mathnotes.netlify.app/ashlyn-math/counting-triangles.html</loc>
-    <lastmod>2023-05-12T19:20:17.109Z</lastmod>
-  </url>
-  <url>
-    <loc>https://test-mathnotes.netlify.app/ashlyn-math/sieve-of-eratosthenes.html</loc>
-    <lastmod>2023-05-12T19:20:31.532Z</lastmod>
+    <lastmod>2023-05-16T19:13:57.508Z</lastmod>
   </url>
   <url>
     <loc>https://test-mathnotes.netlify.app/ashlyn-math/poison-pills.html</loc>
-    <lastmod>2023-05-12T19:20:42.612Z</lastmod>
+    <lastmod>2023-05-16T19:14:08.713Z</lastmod>
   </url>
   <url>
-    <loc>https://test-mathnotes.netlify.app/ashlyn-math/index.html</loc>
-    <lastmod>2023-05-12T19:20:49.022Z</lastmod>
-  </url>
-  <url>
-    <loc>https://test-mathnotes.netlify.app/ashlyn-math/pascals-triangle-coloring-primes.html</loc>
-    <lastmod>2023-05-12T19:21:00.609Z</lastmod>
-  </url>
-  <url>
-    <loc>https://test-mathnotes.netlify.app/ashlyn-math/wodb1.html</loc>
-    <lastmod>2023-05-12T19:21:11.749Z</lastmod>
-  </url>
-  <url>
-    <loc>https://test-mathnotes.netlify.app/ashlyn-math/pascals-triangle.html</loc>
-    <lastmod>2023-05-12T19:21:28.422Z</lastmod>
+    <loc>https://test-mathnotes.netlify.app/ashlyn-math/counting-triangles.html</loc>
+    <lastmod>2023-05-16T19:14:19.654Z</lastmod>
   </url>
   <url>
     <loc>https://test-mathnotes.netlify.app/ashlyn-math/points-on-a-circle.html</loc>
-    <lastmod>2023-05-12T19:21:42.142Z</lastmod>
-  </url>
-  <url>
-    <loc>https://test-mathnotes.netlify.app/ashlyn-math/hexagon-coloring.html</loc>
-    <lastmod>2023-05-12T19:22:16.992Z</lastmod>
-  </url>
-  <url>
-    <loc>https://test-mathnotes.netlify.app/ashlyn-math/wodb3.html</loc>
-    <lastmod>2023-05-12T19:22:28.099Z</lastmod>
+    <lastmod>2023-05-16T19:14:30.776Z</lastmod>
   </url>
   <url>
     <loc>https://test-mathnotes.netlify.app/ashlyn-math/counting-sierpinski.html</loc>
-    <lastmod>2023-05-12T19:22:44.633Z</lastmod>
+    <lastmod>2023-05-16T19:14:42.138Z</lastmod>
+  </url>
+  <url>
+    <loc>https://test-mathnotes.netlify.app/ashlyn-math/pascals-triangle-coloring-primes.html</loc>
+    <lastmod>2023-05-16T19:14:53.429Z</lastmod>
+  </url>
+  <url>
+    <loc>https://test-mathnotes.netlify.app/ashlyn-math/hexagon-coloring.html</loc>
+    <lastmod>2023-05-16T19:15:09.687Z</lastmod>
+  </url>
+  <url>
+    <loc>https://test-mathnotes.netlify.app/ashlyn-math/sieve-of-eratosthenes.html</loc>
+    <lastmod>2023-05-16T19:15:21.232Z</lastmod>
+  </url>
+  <url>
+    <loc>https://test-mathnotes.netlify.app/ashlyn-math/counting-squares.html</loc>
+    <lastmod>2023-05-16T19:15:32.404Z</lastmod>
+  </url>
+  <url>
+    <loc>https://test-mathnotes.netlify.app/ashlyn-math/index.html</loc>
+    <lastmod>2023-05-16T19:15:37.715Z</lastmod>
   </url>
   <url>
     <loc>https://test-mathnotes.netlify.app/ashlyn-math/hexagon-coloring-primes.html</loc>
-    <lastmod>2023-05-12T19:22:56.506Z</lastmod>
+    <lastmod>2023-05-16T19:15:49.296Z</lastmod>
+  </url>
+  <url>
+    <loc>https://test-mathnotes.netlify.app/ashlyn-math/pascals-triangle.html</loc>
+    <lastmod>2023-05-16T19:16:00.756Z</lastmod>
+  </url>
+  <url>
+    <loc>https://test-mathnotes.netlify.app/ashlyn-math/pascals-triangle-coloring.html</loc>
+    <lastmod>2023-05-16T19:16:11.777Z</lastmod>
+  </url>
+  <url>
+    <loc>https://test-mathnotes.netlify.app/ashlyn-math/wodb3.html</loc>
+    <lastmod>2023-05-16T19:16:22.554Z</lastmod>
+  </url>
+  <url>
+    <loc>https://test-mathnotes.netlify.app/ashlyn-math/wodb1.html</loc>
+    <lastmod>2023-05-16T19:16:33.308Z</lastmod>
+  </url>
+  <url>
+    <loc>https://test-mathnotes.netlify.app/ashlyn-math/wodb2.html</loc>
+    <lastmod>2023-05-16T19:16:44.244Z</lastmod>
+  </url>
+  <url>
+    <loc>https://test-mathnotes.netlify.app/index.html</loc>
+    <lastmod>2023-05-16T19:16:49.458Z</lastmod>
   </url>
   <url>
     <loc>https://test-mathnotes.netlify.app/julia/index.html</loc>
-    <lastmod>2023-05-12T19:23:02.756Z</lastmod>
-  </url>
-  <url>
-    <loc>https://test-mathnotes.netlify.app/julia/installing/index.html</loc>
-    <lastmod>2023-05-12T19:23:09.033Z</lastmod>
+    <lastmod>2023-05-16T19:16:54.576Z</lastmod>
   </url>
   <url>
     <loc>https://test-mathnotes.netlify.app/julia/intro/index.html</loc>
-    <lastmod>2023-05-12T19:23:15.316Z</lastmod>
+    <lastmod>2023-05-16T19:16:59.641Z</lastmod>
+  </url>
+  <url>
+    <loc>https://test-mathnotes.netlify.app/julia/installing/index.html</loc>
+    <lastmod>2023-05-16T19:17:04.758Z</lastmod>
   </url>
 </urlset>

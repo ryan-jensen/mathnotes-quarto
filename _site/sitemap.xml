@@ -2,122 +2,122 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://test-mathnotes.netlify.app/python/shiny/index.html</loc>
-    <lastmod>2023-05-16T19:11:43.342Z</lastmod>
+    <lastmod>2023-05-16T20:20:52.386Z</lastmod>
   </url>
   <url>
     <loc>https://test-mathnotes.netlify.app/python/index.html</loc>
-    <lastmod>2023-05-16T19:11:48.533Z</lastmod>
+    <lastmod>2023-05-16T20:20:57.663Z</lastmod>
   </url>
   <url>
     <loc>https://test-mathnotes.netlify.app/python/intro/index.html</loc>
-    <lastmod>2023-05-16T19:13:18.159Z</lastmod>
+    <lastmod>2023-05-16T20:22:16.927Z</lastmod>
   </url>
   <url>
     <loc>https://test-mathnotes.netlify.app/python/installing/index.html</loc>
-    <lastmod>2023-05-16T19:13:24.104Z</lastmod>
+    <lastmod>2023-05-16T20:22:22.326Z</lastmod>
   </url>
   <url>
     <loc>https://test-mathnotes.netlify.app/python/r/index.html</loc>
-    <lastmod>2023-05-16T19:13:25.379Z</lastmod>
+    <lastmod>2023-05-16T20:22:23.474Z</lastmod>
   </url>
   <url>
     <loc>https://test-mathnotes.netlify.app/resume.html</loc>
-    <lastmod>2023-05-16T19:13:25.951Z</lastmod>
+    <lastmod>2023-05-16T20:22:24.018Z</lastmod>
   </url>
   <url>
     <loc>https://test-mathnotes.netlify.app/projects/level-sets/index.html</loc>
-    <lastmod>2023-05-16T20:05:02.455Z</lastmod>
-  </url>
-  <url>
-    <loc>https://test-mathnotes.netlify.app/projects/index.html</loc>
-    <lastmod>2023-05-16T20:05:15.714Z</lastmod>
-  </url>
-  <url>
-    <loc>https://test-mathnotes.netlify.app/ashlyn-math/paths-through-squares.html</loc>
-    <lastmod>2023-05-16T19:13:57.508Z</lastmod>
-  </url>
-  <url>
-    <loc>https://test-mathnotes.netlify.app/ashlyn-math/poison-pills.html</loc>
-    <lastmod>2023-05-16T19:14:08.713Z</lastmod>
-  </url>
-  <url>
-    <loc>https://test-mathnotes.netlify.app/ashlyn-math/counting-triangles.html</loc>
-    <lastmod>2023-05-16T19:14:19.654Z</lastmod>
-  </url>
-  <url>
-    <loc>https://test-mathnotes.netlify.app/ashlyn-math/points-on-a-circle.html</loc>
-    <lastmod>2023-05-16T19:14:30.776Z</lastmod>
-  </url>
-  <url>
-    <loc>https://test-mathnotes.netlify.app/ashlyn-math/counting-sierpinski.html</loc>
-    <lastmod>2023-05-16T19:14:42.138Z</lastmod>
-  </url>
-  <url>
-    <loc>https://test-mathnotes.netlify.app/ashlyn-math/pascals-triangle-coloring-primes.html</loc>
-    <lastmod>2023-05-16T19:14:53.429Z</lastmod>
-  </url>
-  <url>
-    <loc>https://test-mathnotes.netlify.app/ashlyn-math/hexagon-coloring.html</loc>
-    <lastmod>2023-05-16T19:15:09.687Z</lastmod>
-  </url>
-  <url>
-    <loc>https://test-mathnotes.netlify.app/ashlyn-math/sieve-of-eratosthenes.html</loc>
-    <lastmod>2023-05-16T19:15:21.232Z</lastmod>
-  </url>
-  <url>
-    <loc>https://test-mathnotes.netlify.app/ashlyn-math/counting-squares.html</loc>
-    <lastmod>2023-05-16T19:15:32.404Z</lastmod>
-  </url>
-  <url>
-    <loc>https://test-mathnotes.netlify.app/ashlyn-math/index.html</loc>
-    <lastmod>2023-05-16T19:15:37.715Z</lastmod>
-  </url>
-  <url>
-    <loc>https://test-mathnotes.netlify.app/ashlyn-math/hexagon-coloring-primes.html</loc>
-    <lastmod>2023-05-16T19:15:49.296Z</lastmod>
-  </url>
-  <url>
-    <loc>https://test-mathnotes.netlify.app/ashlyn-math/pascals-triangle.html</loc>
-    <lastmod>2023-05-16T19:16:00.756Z</lastmod>
-  </url>
-  <url>
-    <loc>https://test-mathnotes.netlify.app/ashlyn-math/pascals-triangle-coloring.html</loc>
-    <lastmod>2023-05-16T19:16:11.777Z</lastmod>
-  </url>
-  <url>
-    <loc>https://test-mathnotes.netlify.app/ashlyn-math/wodb3.html</loc>
-    <lastmod>2023-05-16T19:16:22.554Z</lastmod>
-  </url>
-  <url>
-    <loc>https://test-mathnotes.netlify.app/ashlyn-math/wodb1.html</loc>
-    <lastmod>2023-05-16T19:16:33.308Z</lastmod>
-  </url>
-  <url>
-    <loc>https://test-mathnotes.netlify.app/ashlyn-math/wodb2.html</loc>
-    <lastmod>2023-05-16T19:16:44.244Z</lastmod>
-  </url>
-  <url>
-    <loc>https://test-mathnotes.netlify.app/index.html</loc>
-    <lastmod>2023-05-16T19:16:49.458Z</lastmod>
-  </url>
-  <url>
-    <loc>https://test-mathnotes.netlify.app/julia/index.html</loc>
-    <lastmod>2023-05-16T19:16:54.576Z</lastmod>
-  </url>
-  <url>
-    <loc>https://test-mathnotes.netlify.app/julia/intro/index.html</loc>
-    <lastmod>2023-05-16T19:16:59.641Z</lastmod>
-  </url>
-  <url>
-    <loc>https://test-mathnotes.netlify.app/julia/installing/index.html</loc>
-    <lastmod>2023-05-16T19:17:04.758Z</lastmod>
-  </url>
-  <url>
-    <loc>https://test-mathnotes.netlify.app/projects/datasaurus/index.html</loc>
-    <lastmod>2023-05-16T20:05:21.151Z</lastmod>
+    <lastmod>2023-05-16T20:22:35.762Z</lastmod>
   </url>
   <url>
     <loc>https://test-mathnotes.netlify.app/projects/cells/index.html</loc>
-    <lastmod>2023-05-16T20:05:10.241Z</lastmod>
+    <lastmod>2023-05-16T20:22:43.425Z</lastmod>
+  </url>
+  <url>
+    <loc>https://test-mathnotes.netlify.app/projects/index.html</loc>
+    <lastmod>2023-05-16T20:22:48.663Z</lastmod>
+  </url>
+  <url>
+    <loc>https://test-mathnotes.netlify.app/projects/datasaurus/index.html</loc>
+    <lastmod>2023-05-16T20:22:53.996Z</lastmod>
+  </url>
+  <url>
+    <loc>https://test-mathnotes.netlify.app/ashlyn-math/paths-through-squares.html</loc>
+    <lastmod>2023-05-16T20:23:07.392Z</lastmod>
+  </url>
+  <url>
+    <loc>https://test-mathnotes.netlify.app/ashlyn-math/poison-pills.html</loc>
+    <lastmod>2023-05-16T20:23:18.395Z</lastmod>
+  </url>
+  <url>
+    <loc>https://test-mathnotes.netlify.app/ashlyn-math/counting-triangles.html</loc>
+    <lastmod>2023-05-16T20:23:29.776Z</lastmod>
+  </url>
+  <url>
+    <loc>https://test-mathnotes.netlify.app/ashlyn-math/points-on-a-circle.html</loc>
+    <lastmod>2023-05-16T20:23:41.043Z</lastmod>
+  </url>
+  <url>
+    <loc>https://test-mathnotes.netlify.app/ashlyn-math/counting-sierpinski.html</loc>
+    <lastmod>2023-05-16T20:23:52.560Z</lastmod>
+  </url>
+  <url>
+    <loc>https://test-mathnotes.netlify.app/ashlyn-math/pascals-triangle-coloring-primes.html</loc>
+    <lastmod>2023-05-16T20:24:03.922Z</lastmod>
+  </url>
+  <url>
+    <loc>https://test-mathnotes.netlify.app/ashlyn-math/hexagon-coloring.html</loc>
+    <lastmod>2023-05-16T20:24:20.520Z</lastmod>
+  </url>
+  <url>
+    <loc>https://test-mathnotes.netlify.app/ashlyn-math/sieve-of-eratosthenes.html</loc>
+    <lastmod>2023-05-16T20:24:32.004Z</lastmod>
+  </url>
+  <url>
+    <loc>https://test-mathnotes.netlify.app/ashlyn-math/counting-squares.html</loc>
+    <lastmod>2023-05-16T20:24:43.236Z</lastmod>
+  </url>
+  <url>
+    <loc>https://test-mathnotes.netlify.app/ashlyn-math/index.html</loc>
+    <lastmod>2023-05-16T20:24:48.555Z</lastmod>
+  </url>
+  <url>
+    <loc>https://test-mathnotes.netlify.app/ashlyn-math/hexagon-coloring-primes.html</loc>
+    <lastmod>2023-05-16T20:25:00.406Z</lastmod>
+  </url>
+  <url>
+    <loc>https://test-mathnotes.netlify.app/ashlyn-math/pascals-triangle.html</loc>
+    <lastmod>2023-05-16T20:25:12.219Z</lastmod>
+  </url>
+  <url>
+    <loc>https://test-mathnotes.netlify.app/ashlyn-math/pascals-triangle-coloring.html</loc>
+    <lastmod>2023-05-16T20:25:23.562Z</lastmod>
+  </url>
+  <url>
+    <loc>https://test-mathnotes.netlify.app/ashlyn-math/wodb3.html</loc>
+    <lastmod>2023-05-16T20:25:34.660Z</lastmod>
+  </url>
+  <url>
+    <loc>https://test-mathnotes.netlify.app/ashlyn-math/wodb1.html</loc>
+    <lastmod>2023-05-16T20:25:45.757Z</lastmod>
+  </url>
+  <url>
+    <loc>https://test-mathnotes.netlify.app/ashlyn-math/wodb2.html</loc>
+    <lastmod>2023-05-16T20:25:56.856Z</lastmod>
+  </url>
+  <url>
+    <loc>https://test-mathnotes.netlify.app/index.html</loc>
+    <lastmod>2023-05-16T20:26:02.095Z</lastmod>
+  </url>
+  <url>
+    <loc>https://test-mathnotes.netlify.app/julia/index.html</loc>
+    <lastmod>2023-05-16T20:26:07.259Z</lastmod>
+  </url>
+  <url>
+    <loc>https://test-mathnotes.netlify.app/julia/intro/index.html</loc>
+    <lastmod>2023-05-16T20:26:12.404Z</lastmod>
+  </url>
+  <url>
+    <loc>https://test-mathnotes.netlify.app/julia/installing/index.html</loc>
+    <lastmod>2023-05-16T20:26:17.902Z</lastmod>
   </url>
 </urlset>

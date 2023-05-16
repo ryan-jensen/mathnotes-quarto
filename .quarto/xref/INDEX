@@ -2057,5 +2057,12 @@
     "index.org": "9dd3f5c7",
     "index.ipynb": "2426ef15",
     "index.adoc": "3c9cdcb0"
+  },
+  "projects/teaching/index.qmd": {
+    "index.html": "875b2466",
+    "index.tex": "44633ac8",
+    "index.md": "a515f558",
+    "index.org": "a6afb2df",
+    "index.ipynb": "7ddf0d27"
   }
 }

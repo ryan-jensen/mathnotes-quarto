@@ -228,13 +228,83 @@
     "href": "projects/datasaurus/index.html",
     "title": "Datasaurus",
     "section": "",
-    "text": "The datasaurus is a collection of 13 sets of data points. Each set has 5 (almost) identical statistcs. Scatter plots reveal that while basic statics are the same, their look arrangement is very different.\nI’ve modified the original datasaurs collection slightly, and applied persistent homology in order to differentiate some of the data sets. My results are below.\n\nDatasaurus Slides\nDatasaurus to Circle\nDatasaurus Stats\nDatasaurus Barcodes"
+    "text": "The datasaurus is a collection of 13 sets of data points. Each set has five (almost) identical statistcs. Scatter plots reveal that while basic statics are the same, their arrangement in the plane is very different.\nI’ve modified the original datasaurs collection slightly, and applied persistent homology in order to differentiate some of the data sets. My results are below.\n\nDatasaurus Slides\nDatasaurus to Circle\nDatasaurus Stats\nDatasaurus Barcodes"
   },
   {
     "objectID": "projects/datasaurus/index.html#datasaurus",
     "href": "projects/datasaurus/index.html#datasaurus",
     "title": "Datasaurus",
     "section": "",
-    "text": "The datasaurus is a collection of 13 sets of data points. Each set has 5 (almost) identical statistcs. Scatter plots reveal that while basic statics are the same, their look arrangement is very different.\nI’ve modified the original datasaurs collection slightly, and applied persistent homology in order to differentiate some of the data sets. My results are below.\n\nDatasaurus Slides\nDatasaurus to Circle\nDatasaurus Stats\nDatasaurus Barcodes"
+    "text": "The datasaurus is a collection of 13 sets of data points. Each set has five (almost) identical statistcs. Scatter plots reveal that while basic statics are the same, their arrangement in the plane is very different.\nI’ve modified the original datasaurs collection slightly, and applied persistent homology in order to differentiate some of the data sets. My results are below.\n\nDatasaurus Slides\nDatasaurus to Circle\nDatasaurus Stats\nDatasaurus Barcodes"
+  },
+  {
+    "objectID": "projects/cells/index.html",
+    "href": "projects/cells/index.html",
+    "title": "Protein Absorption in Cells",
+    "section": "",
+    "text": "What follows is a proof of concept for using persistent homology to establish the effectiveness of medication in treating sick cells. Cells are sick in the sense that they cannot absorb a certain protein. The medication is suppose to allow the protein to be absorbed. The protein has been dyed so as to show up in images. The cells are grouped and each group is given a medication, next the protein is introduced to the cell. Effective medication have the protein distributed throughout the cell. Ineffective medication have the protein concentrated along the cell boundary. The problem is to find a way to compute the effectiveness of the various medications."
+  },
+  {
+    "objectID": "projects/cells/index.html#introduction",
+    "href": "projects/cells/index.html#introduction",
+    "title": "Protein Absorption in Cells",
+    "section": "",
+    "text": "What follows is a proof of concept for using persistent homology to establish the effectiveness of medication in treating sick cells. Cells are sick in the sense that they cannot absorb a certain protein. The medication is suppose to allow the protein to be absorbed. The protein has been dyed so as to show up in images. The cells are grouped and each group is given a medication, next the protein is introduced to the cell. Effective medication have the protein distributed throughout the cell. Ineffective medication have the protein concentrated along the cell boundary. The problem is to find a way to compute the effectiveness of the various medications."
+  },
+  {
+    "objectID": "projects/cells/index.html#imports",
+    "href": "projects/cells/index.html#imports",
+    "title": "Protein Absorption in Cells",
+    "section": "Imports",
+    "text": "Imports\nHere we import the needed libraries. We are suppressing the messages from loading the libraries to keep the resulting html document cleaner. We first check if the package `install.load` is installed, if not we install and load it, if it is installed we simply load it. Next we use this library to install (if needed) and load the renaming libraries.\nsuppressMessages({\n  if(!require(\"install.load\")) {\n  install.packages(\"install.load\")\n  }\n})\nsuppressMessages(install_load(\"tiff\"))      # Using: readTIFF\nsuppressMessages(install_load(\"rtiff\"))     # Using: autoThreshold\nsuppressMessages(install_load(\"RSAGA\"))     # Using: grid.to.xyz\nsuppressMessages(install_load(\"TDA\"))       # Using: ripsDiag, \nsuppressMessages(install_load(\"plotly\"))    # Using: plot_ly\nsuppressMessages(install_load(\"plot3D\"))    # Using: image2D"
+  },
+  {
+    "objectID": "projects/cells/index.html#helper-function",
+    "href": "projects/cells/index.html#helper-function",
+    "title": "Protein Absorption in Cells",
+    "section": "Helper Function",
+    "text": "Helper Function\nThis function applies auto-thresholding to its input, which is an image. If a pixel value is less than the threshold, it replaced by 0. The algorithm for determining the threshold value is in the package `rtiff`.\nautoTH &lt;- function(x) \n{\n  th &lt;- autoThreshold(x, est = .002)\n  x[x &lt; th[5]] &lt;- 0\n  return(x)\n}"
+  },
+  {
+    "objectID": "projects/cells/index.html#image-processing-function",
+    "href": "projects/cells/index.html#image-processing-function",
+    "title": "Protein Absorption in Cells",
+    "section": "Image Processing Function",
+    "text": "Image Processing Function\nThis function takes a file path, an optional trim amount, an optional sample size, and an optional z-distance (the distance between slices in the cell). It then reads in the stacked image, and trims out the noisy slices (if a trim amount is supplied). It then applies a thresholding algorithm to each slice individually (see the helper function above). Next the image slices are turned into 3D-points, with a 4th dimension containing the original pixel intensity. A sample is then taken from this point cloud, and the persistence diagram is computed from this sample.\nThe function returns a list containing the original file path of the image, the raw slices, the trimmed raw slices, the thresholded slices, the point cloud, the sample point cloud, a 3D plot of the sample point cloud, and the persistence diagram.\nprocessImageStack &lt;- function(fp, trmAmnt = NULL, smpSize = NULL, zDist = NULL)\n{\n  ## Read in the stacked image, then trim out the noise (if told to).\n  rawSlices &lt;- readTIFF(fp, indexed = TRUE, native = FALSE, all = TRUE)\n  if(is.null(trmAmnt)) trmAmnt &lt;- 1:length(rawSlices)\n  rawSlicesTrimmed &lt;- rawSlices[trmAmnt]\n\n  ## Autothreshold each image slice seperatly\n  thSlices &lt;- lapply(rawSlicesTrimmed, autoTH)\n\n  ## Convert all image slices (matricies) to point sets, rename z -&gt; intensity\n  pntSlices &lt;- lapply( thSlices\n                     , function(x) grid.to.xyz(data=x,varname = \"intensity\"))\n\n  ## Add in z values\n  if(is.null(zDist)) zDist &lt;- 3.87595 \n  for(i in 1:length(pntSlices))\n  {\n    pntSlices[[i]]$z = rep((i-1)*zDist)\n  }\n\n  ## Concat the lists of points, then switch order so z is before intensity\n  pointCloud &lt;- do.call(\"rbind\", pntSlices)\n  pointCloud &lt;- pointCloud[, c(1,2,4,3)]\n\n\n  ## Get a point sample\n  if(is.null(smpSize)) smpSize &lt;- 500\n  sPointCloud &lt;- pointCloud[ sample( nrow(pointCloud)\n                                   , smpSize\n                                   , prob = pointCloud$intensity), ]\n\n  ## Generate the plot\n  x &lt;- sPointCloud$x\n  y &lt;- sPointCloud$y\n  z &lt;- sPointCloud$z\n  cloudPlot &lt;- {plot_ly(\n    x=x, y=y, z=z, \n    type=\"scatter3d\", \n    mode=\"markers\", \n    text=paste(\"Intensity: \", sPointCloud$intensity),\n    marker=list(opacity=.6, color=sPointCloud$intensity)\n  ) %&gt;%\n  layout(title = fp)\n  }\n\n  ## Compute the persistence diagram, only for the spacial coordinates\n  sRipsDiag &lt;- {\n    ripsDiag(\n      sPointCloud[ ,1:3],\n      maxdimension = 2,\n      maxscale = 40, \n      library = \"GUDHI\"\n    )\n  }\n\n  ## Generate our return list\n  retList &lt;- {list(\n    \"filePath\"         = fp,\n    \"rawSlices\"        = rawSlices, \n    \"rawSlicesTrimmed\" = rawSlicesTrimmed,\n    \"thSlices\"         = thSlices,\n    \"pointCloud\"       = pointCloud,\n    \"sPointCloud\"      = sPointCloud,\n    \"cloudPlot\"        = cloudPlot,\n    \"ripsDiag\"         = sRipsDiag\n  )}\n  return(retList)\n}"
+  },
+  {
+    "objectID": "projects/cells/index.html#test-image",
+    "href": "projects/cells/index.html#test-image",
+    "title": "Protein Absorption in Cells",
+    "section": "Test Image",
+    "text": "Test Image\nNow lets run this on a test image.\n\nRead and Process the Image\ntestFP  &lt;- \"test.tif\"\ntestT   &lt;- 14:36\ntestR   &lt;- processImageStack(fp = testFP, trmAmnt = testT, smpSize = 600)\n\n\nResults\n\nRaw Image Slices\nThis is a heat map of each slice of the cell in its original state, no filtering, thresholding, or trimming has been applied at this point.\nimage2D(testR$rawSlices,asp = 1, axes=FALSE, colkey = FALSE, xlab=\"\", ylab=\"\")\n\n\nRaw Trimmed Image Slices\nSince the first few and last few slices appear to be nothing but noise, they have been trimmed out, and the results are shown below. The results from computing the homology are much better when this is done. At this point the trimming has been done manually based on each image, but it would be nice to have an automated way to do it.\nimage2D(testR$rawSlicesTrimmed,asp = 1, axes=FALSE, colkey = FALSE, xlab=\"\", ylab=\"\")\n\n\nThresholded Image Slices\nNext we show the results after an automatic thresholding function has been applied to each slice individually. This function comes from an R-package.\nimage2D(testR$thSlices,asp = 1, axes=FALSE, colkey = FALSE, xlab=\"\", ylab=\"\")\n\n\n3D Point Cloud\nBelow is an interact 3D point cloud of a random sample taken from the full point cloud generated from the stacked image. The sample is random, but points with higher intensity have a higher probability of being chosen. Hence if there is a high intensity region in the cell, there is a high probability that the sample will include points from this area.\ntestR$cloudPlot\nfile:test-3d-point-cloud.html\n\n\nThe Persistence Diagram\nHere is the persistence diagram for the test image. The black dots are the connected components, the red are the 1-holes, and the blue are the 2-holes. For a cell with high intensity around the boundary, one would expect a blue point far away from the diagonal. For a cell with intensity dispersed throughout, one would expect any blue points to be near the diagonal.\npar(mfrow=c(1,1))\nplot(testR$ripsDiag[[\"diagram\"]])"
+  },
+  {
+    "objectID": "projects/cells/index.html#high-intensity-on-the-cell-boundary",
+    "href": "projects/cells/index.html#high-intensity-on-the-cell-boundary",
+    "title": "Protein Absorption in Cells",
+    "section": "High Intensity on the Cell Boundary",
+    "text": "High Intensity on the Cell Boundary\nHere will will look at a cell with high intensity around the cell boundary. For this example, one would expect the persistence diagram to have one blue point far away from the diagonal.\n\nRead and Process the Image\nstrongFP &lt;- \"Boundary-Strong.tif\"\nstrongT  &lt;- 15:38\nstrongR  &lt;- processImageStack(fp = strongFP, trmAmnt = strongT)\n\n\nRaw Image Slices\nimage2D(strongR$rawSlices,asp = 1, axes=FALSE, colkey = FALSE, xlab=\"\", ylab=\"\")\n\n\n3D Point Cloud\nstrongR$cloudPlot\nfile:high-intensity-boundary.html\n\n\nThe Persistence Diagram\npar(mfrow=c(1,1))\nplot(strongR$ripsDiag[[\"diagram\"]])"
+  },
+  {
+    "objectID": "projects/cells/index.html#medium-intensity-on-the-cell-boundary",
+    "href": "projects/cells/index.html#medium-intensity-on-the-cell-boundary",
+    "title": "Protein Absorption in Cells",
+    "section": "Medium Intensity on the Cell Boundary",
+    "text": "Medium Intensity on the Cell Boundary\nHere will will look at a cell with medium intensity around the cell boundary. For this example, one would expect the persistence diagram to have one blue point a moderate distance away from the diagonal.\nmediumFP &lt;- \"Boundary-Medium.tif\"\nmediumT  &lt;- 7:29\nmediumR  &lt;- processImageStack(fp = mediumFP, trmAmnt = mediumT)\nimage2D(mediumR$rawSlices,asp = 1, axes=FALSE, colkey = FALSE, xlab=\"\", ylab=\"\")\nmediumR$cloudPlot\nfile:medium-intensity-boundary.html\npar(mfrow=c(1,1))\nplot(mediumR$ripsDiag[[\"diagram\"]])"
+  },
+  {
+    "objectID": "projects/cells/index.html#low-intensity-on-the-cell-boundary",
+    "href": "projects/cells/index.html#low-intensity-on-the-cell-boundary",
+    "title": "Protein Absorption in Cells",
+    "section": "Low Intensity on the Cell Boundary",
+    "text": "Low Intensity on the Cell Boundary\nHere will will look at a cell with low intensity around the cell boundary. For this example, one would expect the persistence diagram to have no blue points except near the diagonal.\nweakFP &lt;- \"Boundary-Weak.tif\"\nweakT  &lt;- 13:29\nweakR  &lt;- processImageStack(fp = weakFP, trmAmnt = weakT)\nimage2D(weakR$rawSlices,asp = 1, axes=FALSE, colkey = FALSE, xlab=\"\", ylab=\"\")\nweakR$cloudPlot\nfile:weak-intensity-boundary.html\npar(mfrow=c(1,1))\nplot(weakR$ripsDiag[[\"diagram\"]])"
+  },
+  {
+    "objectID": "projects/cells/index.html#results-comparison",
+    "href": "projects/cells/index.html#results-comparison",
+    "title": "Protein Absorption in Cells",
+    "section": "Results Comparison",
+    "text": "Results Comparison\npar(mfrow=c(3,1))\nplot(weakR$ripsDiag[[\"diagram\"]], main=\"Weak Intensity Boundary\")\nplot(mediumR$ripsDiag[[\"diagram\"]], main=\"Medium Intensity Boundary\")\nplot(strongR$ripsDiag[[\"diagram\"]], main=\"Strong Intensity Boundary\")\n\n\n\nThe weak intensity boundary is indicative of the medication working effectively. The blue dots all begin close to the diagonal in the persistence diagram indicates that the protein distribution has no voids and is evenly distributed in the cell.\nThe strong intensity boundary is indicative of the medication not working effectively. The blue dot far from the diagonal in the persistence diagrams indicates that the protein is distributed along the cell boundary, meaning little protein made it into the cell."
   }
 ]

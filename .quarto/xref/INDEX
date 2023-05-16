@@ -2049,5 +2049,13 @@
     "data.org": "882d5f02",
     "data.ipynb": "9af7bb5b",
     "data.adoc": "c512f9b2"
+  },
+  "projects/cells/index.md": {
+    "index.html": "8e752447",
+    "index.tex": "b246aa38",
+    "index.commonmark.md": "e7c3ea1f",
+    "index.org": "9dd3f5c7",
+    "index.ipynb": "2426ef15",
+    "index.adoc": "3c9cdcb0"
   }
 }

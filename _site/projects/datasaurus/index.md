@@ -14,8 +14,8 @@ keep-md: true
 
 ## Datasaurus
 The datasaurus is a collection of 13 sets of data points. Each set has 
-5 (almost) identical statistcs. Scatter plots reveal that while basic
-statics are the same, their look arrangement is very different. 
+five (almost) identical statistcs. Scatter plots reveal that while basic
+statics are the same, their arrangement in the plane is very different. 
 
 I've modified the original datasaurs collection slightly, and applied
 persistent homology in order to differentiate some of the data sets.

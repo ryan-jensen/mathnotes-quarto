@@ -1,7 +1,7 @@
 ---
 title: "Homology of Level Sets"
 author: "Ryan Jensen"
-order: 2
+order: 4
 keep-md: true
 ---
 

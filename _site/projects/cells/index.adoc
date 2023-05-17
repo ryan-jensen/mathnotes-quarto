@@ -141,7 +141,7 @@ This is a heat map of each slice of the cell in its original state, no filtering
 image2D(testR$rawSlices,asp = 1, axes=FALSE, colkey = FALSE, xlab="", ylab="")
 ----
 
-image:.ob-jupyter/4e37ec94b1be55a695349f73b8f01f88841854fd.png[.ob-jupyter/4e37ec94b1be55a695349f73b8f01f88841854fd] image:.ob-jupyter/0fb00e44b437ed37b8d474744e0aa4898c57fdb8.png[.ob-jupyter/0fb00e44b437ed37b8d474744e0aa4898c57fdb8] image:.ob-jupyter/9de30cd19ffc2055a145f1a78d597b1f82c44d79.png[.ob-jupyter/9de30cd19ffc2055a145f1a78d597b1f82c44d79] image:.ob-jupyter/5fcf38770633aaf2f12a24225b3fc5ade2cd292e.png[.ob-jupyter/5fcf38770633aaf2f12a24225b3fc5ade2cd292e] image:.ob-jupyter/82fe62a88a25059648f541fa6c79a371ab008b69.png[.ob-jupyter/82fe62a88a25059648f541fa6c79a371ab008b69]
+image:4e37ec94b1be55a695349f73b8f01f88841854fd.png[4e37ec94b1be55a695349f73b8f01f88841854fd] image:0fb00e44b437ed37b8d474744e0aa4898c57fdb8.png[0fb00e44b437ed37b8d474744e0aa4898c57fdb8] image:9de30cd19ffc2055a145f1a78d597b1f82c44d79.png[9de30cd19ffc2055a145f1a78d597b1f82c44d79] image:5fcf38770633aaf2f12a24225b3fc5ade2cd292e.png[5fcf38770633aaf2f12a24225b3fc5ade2cd292e] image:82fe62a88a25059648f541fa6c79a371ab008b69.png[82fe62a88a25059648f541fa6c79a371ab008b69]
 
 ==== 5.2.2 Raw Trimmed Image Slices
 
@@ -152,7 +152,7 @@ Since the first few and last few slices appear to be nothing but noise, they hav
 image2D(testR$rawSlicesTrimmed,asp = 1, axes=FALSE, colkey = FALSE, xlab="", ylab="")
 ----
 
-image:.ob-jupyter/3b73763340e672c5332d2e3637b59182b63bad8a.png[.ob-jupyter/3b73763340e672c5332d2e3637b59182b63bad8a] image:.ob-jupyter/dd530524401550024d7b00227d4fbfa52f908173.png[.ob-jupyter/dd530524401550024d7b00227d4fbfa52f908173] image:.ob-jupyter/40c58d231513855eeb14cc1d98327793182fbb14.png[.ob-jupyter/40c58d231513855eeb14cc1d98327793182fbb14]
+image:3b73763340e672c5332d2e3637b59182b63bad8a.png[3b73763340e672c5332d2e3637b59182b63bad8a] image:dd530524401550024d7b00227d4fbfa52f908173.png[dd530524401550024d7b00227d4fbfa52f908173] image:40c58d231513855eeb14cc1d98327793182fbb14.png[40c58d231513855eeb14cc1d98327793182fbb14]
 
 ==== 5.2.3 Thresholded Image Slices
 
@@ -163,7 +163,7 @@ Next we show the results after an automatic thresholding function has been appli
 image2D(testR$thSlices,asp = 1, axes=FALSE, colkey = FALSE, xlab="", ylab="")
 ----
 
-image:.ob-jupyter/313d2b0b229d460552aaeb46bc04de9d9ad13390.png[.ob-jupyter/313d2b0b229d460552aaeb46bc04de9d9ad13390] image:.ob-jupyter/466e15f46d42003a6f6c549834c847ca40aac60d.png[.ob-jupyter/466e15f46d42003a6f6c549834c847ca40aac60d] image:.ob-jupyter/80da1612f3a1e057ad402f79dbbb87f841d043aa.png[.ob-jupyter/80da1612f3a1e057ad402f79dbbb87f841d043aa]
+image:313d2b0b229d460552aaeb46bc04de9d9ad13390.png[313d2b0b229d460552aaeb46bc04de9d9ad13390] image:466e15f46d42003a6f6c549834c847ca40aac60d.png[466e15f46d42003a6f6c549834c847ca40aac60d] image:80da1612f3a1e057ad402f79dbbb87f841d043aa.png[80da1612f3a1e057ad402f79dbbb87f841d043aa]
 
 ==== 5.2.4 3D Point Cloud
 
@@ -208,7 +208,7 @@ strongR  <- processImageStack(fp = strongFP, trmAmnt = strongT)
 image2D(strongR$rawSlices,asp = 1, axes=FALSE, colkey = FALSE, xlab="", ylab="")
 ----
 
-image:.ob-jupyter/4e37ec94b1be55a695349f73b8f01f88841854fd.png[.ob-jupyter/4e37ec94b1be55a695349f73b8f01f88841854fd] image:.ob-jupyter/0fb00e44b437ed37b8d474744e0aa4898c57fdb8.png[.ob-jupyter/0fb00e44b437ed37b8d474744e0aa4898c57fdb8] image:.ob-jupyter/9de30cd19ffc2055a145f1a78d597b1f82c44d79.png[.ob-jupyter/9de30cd19ffc2055a145f1a78d597b1f82c44d79] image:.ob-jupyter/5fcf38770633aaf2f12a24225b3fc5ade2cd292e.png[.ob-jupyter/5fcf38770633aaf2f12a24225b3fc5ade2cd292e] image:.ob-jupyter/82fe62a88a25059648f541fa6c79a371ab008b69.png[.ob-jupyter/82fe62a88a25059648f541fa6c79a371ab008b69]
+image:4e37ec94b1be55a695349f73b8f01f88841854fd.png[4e37ec94b1be55a695349f73b8f01f88841854fd] image:0fb00e44b437ed37b8d474744e0aa4898c57fdb8.png[0fb00e44b437ed37b8d474744e0aa4898c57fdb8] image:9de30cd19ffc2055a145f1a78d597b1f82c44d79.png[9de30cd19ffc2055a145f1a78d597b1f82c44d79] image:5fcf38770633aaf2f12a24225b3fc5ade2cd292e.png[5fcf38770633aaf2f12a24225b3fc5ade2cd292e] image:82fe62a88a25059648f541fa6c79a371ab008b69.png[82fe62a88a25059648f541fa6c79a371ab008b69]
 
 === 6.3 3D Point Cloud
 
@@ -245,7 +245,7 @@ mediumR  <- processImageStack(fp = mediumFP, trmAmnt = mediumT)
 image2D(mediumR$rawSlices,asp = 1, axes=FALSE, colkey = FALSE, xlab="", ylab="")
 ----
 
-image:.ob-jupyter/6a72aeb4cfa922b1a13d8ce307c4c35f4ff9e1fe.png[.ob-jupyter/6a72aeb4cfa922b1a13d8ce307c4c35f4ff9e1fe] image:.ob-jupyter/23d6e5932d96225e8e90b62ee260c9f81f367bdd.png[.ob-jupyter/23d6e5932d96225e8e90b62ee260c9f81f367bdd] image:.ob-jupyter/9f64bfb84a3da40403ae2aa24bb56114b7bbb36c.png[.ob-jupyter/9f64bfb84a3da40403ae2aa24bb56114b7bbb36c] image:.ob-jupyter/0f9aa8506b7a7e987089b7ce8a5b7e111d9ef6b9.png[.ob-jupyter/0f9aa8506b7a7e987089b7ce8a5b7e111d9ef6b9] image:.ob-jupyter/c68966819c74c8a9e898b1afab649b542d8d7e6e.png[.ob-jupyter/c68966819c74c8a9e898b1afab649b542d8d7e6e]
+image:6a72aeb4cfa922b1a13d8ce307c4c35f4ff9e1fe.png[6a72aeb4cfa922b1a13d8ce307c4c35f4ff9e1fe] image:23d6e5932d96225e8e90b62ee260c9f81f367bdd.png[23d6e5932d96225e8e90b62ee260c9f81f367bdd] image:9f64bfb84a3da40403ae2aa24bb56114b7bbb36c.png[9f64bfb84a3da40403ae2aa24bb56114b7bbb36c] image:0f9aa8506b7a7e987089b7ce8a5b7e111d9ef6b9.png[0f9aa8506b7a7e987089b7ce8a5b7e111d9ef6b9] image:c68966819c74c8a9e898b1afab649b542d8d7e6e.png[c68966819c74c8a9e898b1afab649b542d8d7e6e]
 
 [source,R,code]
 ----
@@ -278,7 +278,7 @@ weakR  <- processImageStack(fp = weakFP, trmAmnt = weakT)
 image2D(weakR$rawSlices,asp = 1, axes=FALSE, colkey = FALSE, xlab="", ylab="")
 ----
 
-image:.ob-jupyter/72575b13c488ace9b29a98865952954bcc756d08.png[.ob-jupyter/72575b13c488ace9b29a98865952954bcc756d08] image:.ob-jupyter/3a568d6cf8e7ec4fb461f3d60eabf45aa466b73c.png[.ob-jupyter/3a568d6cf8e7ec4fb461f3d60eabf45aa466b73c] image:.ob-jupyter/83d94720740ebd19bd84c6ae8251ebf22c4ac13c.png[.ob-jupyter/83d94720740ebd19bd84c6ae8251ebf22c4ac13c] image:.ob-jupyter/48393dc450d10457a99295fae2ae25c9de7bdbef.png[.ob-jupyter/48393dc450d10457a99295fae2ae25c9de7bdbef] image:.ob-jupyter/83d4ebef82cb3c1dec43e774c3815824f072b087.png[.ob-jupyter/83d4ebef82cb3c1dec43e774c3815824f072b087]
+image:72575b13c488ace9b29a98865952954bcc756d08.png[72575b13c488ace9b29a98865952954bcc756d08] image:3a568d6cf8e7ec4fb461f3d60eabf45aa466b73c.png[3a568d6cf8e7ec4fb461f3d60eabf45aa466b73c] image:83d94720740ebd19bd84c6ae8251ebf22c4ac13c.png[83d94720740ebd19bd84c6ae8251ebf22c4ac13c] image:48393dc450d10457a99295fae2ae25c9de7bdbef.png[48393dc450d10457a99295fae2ae25c9de7bdbef] image:83d4ebef82cb3c1dec43e774c3815824f072b087.png[83d4ebef82cb3c1dec43e774c3815824f072b087]
 
 [source,R,code]
 ----

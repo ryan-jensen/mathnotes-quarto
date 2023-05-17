@@ -187,11 +187,11 @@ filtering, thresholding, or trimming has been applied at this point.
 image2D(testR$rawSlices,asp = 1, axes=FALSE, colkey = FALSE, xlab="", ylab="")
 #+end_src
 
-[[file:.ob-jupyter/4e37ec94b1be55a695349f73b8f01f88841854fd.png]]
-[[file:.ob-jupyter/0fb00e44b437ed37b8d474744e0aa4898c57fdb8.png]]
-[[file:.ob-jupyter/9de30cd19ffc2055a145f1a78d597b1f82c44d79.png]]
-[[file:.ob-jupyter/5fcf38770633aaf2f12a24225b3fc5ade2cd292e.png]]
-[[file:.ob-jupyter/82fe62a88a25059648f541fa6c79a371ab008b69.png]]
+[[file:4e37ec94b1be55a695349f73b8f01f88841854fd.png]]
+[[file:0fb00e44b437ed37b8d474744e0aa4898c57fdb8.png]]
+[[file:9de30cd19ffc2055a145f1a78d597b1f82c44d79.png]]
+[[file:5fcf38770633aaf2f12a24225b3fc5ade2cd292e.png]]
+[[file:82fe62a88a25059648f541fa6c79a371ab008b69.png]]
 
 **** 5.2.2 Raw Trimmed Image Slices
 :PROPERTIES:
@@ -208,9 +208,9 @@ would be nice to have an automated way to do it.
 image2D(testR$rawSlicesTrimmed,asp = 1, axes=FALSE, colkey = FALSE, xlab="", ylab="")
 #+end_src
 
-[[file:.ob-jupyter/3b73763340e672c5332d2e3637b59182b63bad8a.png]]
-[[file:.ob-jupyter/dd530524401550024d7b00227d4fbfa52f908173.png]]
-[[file:.ob-jupyter/40c58d231513855eeb14cc1d98327793182fbb14.png]]
+[[file:3b73763340e672c5332d2e3637b59182b63bad8a.png]]
+[[file:dd530524401550024d7b00227d4fbfa52f908173.png]]
+[[file:40c58d231513855eeb14cc1d98327793182fbb14.png]]
 
 **** 5.2.3 Thresholded Image Slices
 :PROPERTIES:
@@ -225,9 +225,9 @@ R-package.
 image2D(testR$thSlices,asp = 1, axes=FALSE, colkey = FALSE, xlab="", ylab="")
 #+end_src
 
-[[file:.ob-jupyter/313d2b0b229d460552aaeb46bc04de9d9ad13390.png]]
-[[file:.ob-jupyter/466e15f46d42003a6f6c549834c847ca40aac60d.png]]
-[[file:.ob-jupyter/80da1612f3a1e057ad402f79dbbb87f841d043aa.png]]
+[[file:313d2b0b229d460552aaeb46bc04de9d9ad13390.png]]
+[[file:466e15f46d42003a6f6c549834c847ca40aac60d.png]]
+[[file:80da1612f3a1e057ad402f79dbbb87f841d043aa.png]]
 
 **** 5.2.4 3D Point Cloud
 :PROPERTIES:
@@ -294,11 +294,11 @@ strongR  <- processImageStack(fp = strongFP, trmAmnt = strongT)
 image2D(strongR$rawSlices,asp = 1, axes=FALSE, colkey = FALSE, xlab="", ylab="")
 #+end_src
 
-[[file:.ob-jupyter/4e37ec94b1be55a695349f73b8f01f88841854fd.png]]
-[[file:.ob-jupyter/0fb00e44b437ed37b8d474744e0aa4898c57fdb8.png]]
-[[file:.ob-jupyter/9de30cd19ffc2055a145f1a78d597b1f82c44d79.png]]
-[[file:.ob-jupyter/5fcf38770633aaf2f12a24225b3fc5ade2cd292e.png]]
-[[file:.ob-jupyter/82fe62a88a25059648f541fa6c79a371ab008b69.png]]
+[[file:4e37ec94b1be55a695349f73b8f01f88841854fd.png]]
+[[file:0fb00e44b437ed37b8d474744e0aa4898c57fdb8.png]]
+[[file:9de30cd19ffc2055a145f1a78d597b1f82c44d79.png]]
+[[file:5fcf38770633aaf2f12a24225b3fc5ade2cd292e.png]]
+[[file:82fe62a88a25059648f541fa6c79a371ab008b69.png]]
 
 *** 6.3 3D Point Cloud
 :PROPERTIES:
@@ -342,11 +342,11 @@ mediumR  <- processImageStack(fp = mediumFP, trmAmnt = mediumT)
 image2D(mediumR$rawSlices,asp = 1, axes=FALSE, colkey = FALSE, xlab="", ylab="")
 #+end_src
 
-[[file:.ob-jupyter/6a72aeb4cfa922b1a13d8ce307c4c35f4ff9e1fe.png]]
-[[file:.ob-jupyter/23d6e5932d96225e8e90b62ee260c9f81f367bdd.png]]
-[[file:.ob-jupyter/9f64bfb84a3da40403ae2aa24bb56114b7bbb36c.png]]
-[[file:.ob-jupyter/0f9aa8506b7a7e987089b7ce8a5b7e111d9ef6b9.png]]
-[[file:.ob-jupyter/c68966819c74c8a9e898b1afab649b542d8d7e6e.png]]
+[[file:6a72aeb4cfa922b1a13d8ce307c4c35f4ff9e1fe.png]]
+[[file:23d6e5932d96225e8e90b62ee260c9f81f367bdd.png]]
+[[file:9f64bfb84a3da40403ae2aa24bb56114b7bbb36c.png]]
+[[file:0f9aa8506b7a7e987089b7ce8a5b7e111d9ef6b9.png]]
+[[file:c68966819c74c8a9e898b1afab649b542d8d7e6e.png]]
 
 #+begin_src jupyter-R :file medium-intensity-boundary.html :exports code
 mediumR$cloudPlot
@@ -380,11 +380,11 @@ weakR  <- processImageStack(fp = weakFP, trmAmnt = weakT)
 image2D(weakR$rawSlices,asp = 1, axes=FALSE, colkey = FALSE, xlab="", ylab="")
 #+end_src
 
-[[file:.ob-jupyter/72575b13c488ace9b29a98865952954bcc756d08.png]]
-[[file:.ob-jupyter/3a568d6cf8e7ec4fb461f3d60eabf45aa466b73c.png]]
-[[file:.ob-jupyter/83d94720740ebd19bd84c6ae8251ebf22c4ac13c.png]]
-[[file:.ob-jupyter/48393dc450d10457a99295fae2ae25c9de7bdbef.png]]
-[[file:.ob-jupyter/83d4ebef82cb3c1dec43e774c3815824f072b087.png]]
+[[file:72575b13c488ace9b29a98865952954bcc756d08.png]]
+[[file:3a568d6cf8e7ec4fb461f3d60eabf45aa466b73c.png]]
+[[file:83d94720740ebd19bd84c6ae8251ebf22c4ac13c.png]]
+[[file:48393dc450d10457a99295fae2ae25c9de7bdbef.png]]
+[[file:83d4ebef82cb3c1dec43e774c3815824f072b087.png]]
 
 #+begin_src jupyter-R :file weak-intensity-boundary.html :exports code
 weakR$cloudPlot

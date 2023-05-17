@@ -16,6 +16,7 @@ Things to do on this website:
 
 * A landing page.
 * Resume
+* favicon
 * Get Shiny apps to work with r.
 * Thebelab integration.
-* Move over things from old website.
+

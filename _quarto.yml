@@ -6,7 +6,7 @@ website:
   page-navigation: true
   title: "Mathnotes"
   site-url: "https://test-mathnotes.netlify.app"
-  repo-url: "https://github.com/ryan-jensen/mathnotes"
+  repo-url: "https://github.com/ryan-jensen/mathnotes-quarto"
   reader-mode: true
   google-analytics: "G-03CF79D67N"
   search: 

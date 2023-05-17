@@ -14,7 +14,7 @@ website:
     type: textbox
 
   page-footer: 
-    left: "This page is built with [Quarto](https://quarto.org)."
+    left: "This page is built with [Quarto](https://quarto.org)"
     right: "&copy; 2023 Ryan Jensen"
 
   sidebar:

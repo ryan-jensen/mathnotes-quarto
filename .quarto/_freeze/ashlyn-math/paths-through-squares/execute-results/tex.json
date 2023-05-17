@@ -1,7 +1,7 @@
 {
   "hash": "5cfd2764fbbc75c6fbee219a206a97e9",
   "result": {
-    "markdown": "---\ntitle: Paths Through Squares\nautor: Ryan Jensen\nnumber-depth: 1\norder: 60\nformat:\n  html:\n    code-fold: true\n    default-image-extension: svg\n  pdf:\n    default-image-extension: pdf\n---\n\n#### Problem\nHow many paths are there starting in the upper left square and ending\nin the bottom right square, if you are only allowed to move right or down?\n\n::: {.cell execution_count=1}\n\n::: {.cell-output .cell-output-stdout}\n```\nRender PDF requires pylatex installation.\n```\n:::\n:::\n\n\n![Paths](image/paths-through-squares){width=80%}\n\n",
+    "markdown": "---\ntitle: Paths Through Squares\nautor: Ryan Jensen\nnumber-depth: 1\norder: 60\nformat:\n  html:\n    code-fold: true\n    default-image-extension: svg\n  pdf:\n    default-image-extension: pdf\n---\n\n#### Problem\nHow many paths are there starting in the upper left square and ending\nin the bottom right square, if you are only allowed to move right or down?\n\n\n\n![Paths](image/paths-through-squares){width=80%}\n\n",
     "supporting": [
       "paths-through-squares_files/figure-pdf"
     ],

@@ -22,14 +22,6 @@ connecting them along the diagonals containing ones. As you did in
 small hexagons containing an odd number one color, and all the small hexagons 
 containing an even number another color.
 
-::: {.cell execution_count=1}
-
-::: {.cell-output .cell-output-stdout}
-```
-Render PDF requires pylatex installation.
-```
-:::
-:::
 
 
 ![Hexagon Coloring](image/hexagon-coloring){width=80%}

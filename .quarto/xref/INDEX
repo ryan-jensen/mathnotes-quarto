@@ -2064,5 +2064,13 @@
     "index.md": "a515f558",
     "index.org": "a6afb2df",
     "index.ipynb": "7ddf0d27"
+  },
+  "projects/cells/index.qmd": {
+    "index.html": "9bdb704f",
+    "index.tex": "c62528d4",
+    "index.md": "ce8d9e18",
+    "index.org": "19a61464",
+    "index.ipynb": "64400365",
+    "index.adoc": "6bb4d4b6"
   }
 }

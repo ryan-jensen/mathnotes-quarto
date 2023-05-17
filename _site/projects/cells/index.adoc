@@ -1,11 +1,11 @@
 = Protein Absorption in Cells
 Ryan Jensen
 
-== Introduction
+== 1 Introduction
 
 What follows is a proof of concept for using persistent homology to establish the effectiveness of medication in treating sick cells. Cells are sick in the sense that they cannot absorb a certain protein. The medication is suppose to allow the protein to be absorbed. The protein has been dyed so as to show up in images. The cells are grouped and each group is given a medication, next the protein is introduced to the cell. Effective medication have the protein distributed throughout the cell. Ineffective medication have the protein concentrated along the cell boundary. The problem is to find a way to compute the effectiveness of the various medications.
 
-== Imports
+== 2 Imports
 
 Here we import the needed libraries. We are suppressing the messages from loading the libraries to keep the resulting html document cleaner. We first check if the package `install.load` is installed, if not we install and load it, if it is installed we simply load it. Next we use this library to install (if needed) and load the renaming libraries.
 
@@ -24,7 +24,7 @@ suppressMessages(install_load("plotly"))    # Using: plot_ly
 suppressMessages(install_load("plot3D"))    # Using: image2D
 ----
 
-== Helper Function
+== 3 Helper Function
 
 This function applies auto-thresholding to its input, which is an image. If a pixel value is less than the threshold, it replaced by 0. The algorithm for determining the threshold value is in the package `rtiff`.
 
@@ -38,7 +38,7 @@ autoTH <- function(x)
 }
 ----
 
-== Image Processing Function
+== 4 Image Processing Function
 
 This function takes a file path, an optional trim amount, an optional sample size, and an optional z-distance (the distance between slices in the cell). It then reads in the stacked image, and trims out the noisy slices (if a trim amount is supplied). It then applies a thresholding algorithm to each slice individually (see the helper function above). Next the image slices are turned into 3D-points, with a 4th dimension containing the original pixel intensity. A sample is then taken from this point cloud, and the persistence diagram is computed from this sample.
 
@@ -117,11 +117,11 @@ processImageStack <- function(fp, trmAmnt = NULL, smpSize = NULL, zDist = NULL)
 }
 ----
 
-== Test Image
+== 5 Test Image
 
 Now lets run this on a test image.
 
-=== Read and Process the Image
+=== 5.1 Read and Process the Image
 
 [source,R,code]
 ----
@@ -130,9 +130,9 @@ testT   <- 14:36
 testR   <- processImageStack(fp = testFP, trmAmnt = testT, smpSize = 600)
 ----
 
-=== Results
+=== 5.2 Results
 
-==== Raw Image Slices
+==== 5.2.1 Raw Image Slices
 
 This is a heat map of each slice of the cell in its original state, no filtering, thresholding, or trimming has been applied at this point.
 
@@ -141,7 +141,9 @@ This is a heat map of each slice of the cell in its original state, no filtering
 image2D(testR$rawSlices,asp = 1, axes=FALSE, colkey = FALSE, xlab="", ylab="")
 ----
 
-==== Raw Trimmed Image Slices
+image:.ob-jupyter/4e37ec94b1be55a695349f73b8f01f88841854fd.png[.ob-jupyter/4e37ec94b1be55a695349f73b8f01f88841854fd] image:.ob-jupyter/0fb00e44b437ed37b8d474744e0aa4898c57fdb8.png[.ob-jupyter/0fb00e44b437ed37b8d474744e0aa4898c57fdb8] image:.ob-jupyter/9de30cd19ffc2055a145f1a78d597b1f82c44d79.png[.ob-jupyter/9de30cd19ffc2055a145f1a78d597b1f82c44d79] image:.ob-jupyter/5fcf38770633aaf2f12a24225b3fc5ade2cd292e.png[.ob-jupyter/5fcf38770633aaf2f12a24225b3fc5ade2cd292e] image:.ob-jupyter/82fe62a88a25059648f541fa6c79a371ab008b69.png[.ob-jupyter/82fe62a88a25059648f541fa6c79a371ab008b69]
+
+==== 5.2.2 Raw Trimmed Image Slices
 
 Since the first few and last few slices appear to be nothing but noise, they have been trimmed out, and the results are shown below. The results from computing the homology are much better when this is done. At this point the trimming has been done manually based on each image, but it would be nice to have an automated way to do it.
 
@@ -150,7 +152,9 @@ Since the first few and last few slices appear to be nothing but noise, they hav
 image2D(testR$rawSlicesTrimmed,asp = 1, axes=FALSE, colkey = FALSE, xlab="", ylab="")
 ----
 
-==== Thresholded Image Slices
+image:.ob-jupyter/3b73763340e672c5332d2e3637b59182b63bad8a.png[.ob-jupyter/3b73763340e672c5332d2e3637b59182b63bad8a] image:.ob-jupyter/dd530524401550024d7b00227d4fbfa52f908173.png[.ob-jupyter/dd530524401550024d7b00227d4fbfa52f908173] image:.ob-jupyter/40c58d231513855eeb14cc1d98327793182fbb14.png[.ob-jupyter/40c58d231513855eeb14cc1d98327793182fbb14]
+
+==== 5.2.3 Thresholded Image Slices
 
 Next we show the results after an automatic thresholding function has been applied to each slice individually. This function comes from an R-package.
 
@@ -159,7 +163,9 @@ Next we show the results after an automatic thresholding function has been appli
 image2D(testR$thSlices,asp = 1, axes=FALSE, colkey = FALSE, xlab="", ylab="")
 ----
 
-==== 3D Point Cloud
+image:.ob-jupyter/313d2b0b229d460552aaeb46bc04de9d9ad13390.png[.ob-jupyter/313d2b0b229d460552aaeb46bc04de9d9ad13390] image:.ob-jupyter/466e15f46d42003a6f6c549834c847ca40aac60d.png[.ob-jupyter/466e15f46d42003a6f6c549834c847ca40aac60d] image:.ob-jupyter/80da1612f3a1e057ad402f79dbbb87f841d043aa.png[.ob-jupyter/80da1612f3a1e057ad402f79dbbb87f841d043aa]
+
+==== 5.2.4 3D Point Cloud
 
 Below is an interact 3D point cloud of a random sample taken from the full point cloud generated from the stacked image. The sample is random, but points with higher intensity have a higher probability of being chosen. Hence if there is a high intensity region in the cell, there is a high probability that the sample will include points from this area.
 
@@ -170,7 +176,7 @@ testR$cloudPlot
 
 link:test-3d-point-cloud.html[file:test-3d-point-cloud.html]
 
-==== The Persistence Diagram
+==== 5.2.5 The Persistence Diagram
 
 Here is the persistence diagram for the test image. The black dots are the connected components, the red are the 1-holes, and the blue are the 2-holes. For a cell with high intensity around the boundary, one would expect a blue point far away from the diagonal. For a cell with intensity dispersed throughout, one would expect any blue points to be near the diagonal.
 
@@ -180,11 +186,13 @@ par(mfrow=c(1,1))
 plot(testR$ripsDiag[["diagram"]])
 ----
 
-== High Intensity on the Cell Boundary
+image:test-persistence-diagram.png[test-persistence-diagram]
+
+== 6 High Intensity on the Cell Boundary
 
 Here will will look at a cell with high intensity around the cell boundary. For this example, one would expect the persistence diagram to have one blue point far away from the diagonal.
 
-=== Read and Process the Image
+=== 6.1 Read and Process the Image
 
 [source,R,code]
 ----
@@ -193,14 +201,16 @@ strongT  <- 15:38
 strongR  <- processImageStack(fp = strongFP, trmAmnt = strongT)
 ----
 
-=== Raw Image Slices
+=== 6.2 Raw Image Slices
 
 [source,R,code]
 ----
 image2D(strongR$rawSlices,asp = 1, axes=FALSE, colkey = FALSE, xlab="", ylab="")
 ----
 
-=== 3D Point Cloud
+image:.ob-jupyter/4e37ec94b1be55a695349f73b8f01f88841854fd.png[.ob-jupyter/4e37ec94b1be55a695349f73b8f01f88841854fd] image:.ob-jupyter/0fb00e44b437ed37b8d474744e0aa4898c57fdb8.png[.ob-jupyter/0fb00e44b437ed37b8d474744e0aa4898c57fdb8] image:.ob-jupyter/9de30cd19ffc2055a145f1a78d597b1f82c44d79.png[.ob-jupyter/9de30cd19ffc2055a145f1a78d597b1f82c44d79] image:.ob-jupyter/5fcf38770633aaf2f12a24225b3fc5ade2cd292e.png[.ob-jupyter/5fcf38770633aaf2f12a24225b3fc5ade2cd292e] image:.ob-jupyter/82fe62a88a25059648f541fa6c79a371ab008b69.png[.ob-jupyter/82fe62a88a25059648f541fa6c79a371ab008b69]
+
+=== 6.3 3D Point Cloud
 
 [source,R,code]
 ----
@@ -209,7 +219,7 @@ strongR$cloudPlot
 
 link:high-intensity-boundary.html[file:high-intensity-boundary.html]
 
-=== The Persistence Diagram
+=== 6.4 The Persistence Diagram
 
 [source,R,code]
 ----
@@ -217,7 +227,9 @@ par(mfrow=c(1,1))
 plot(strongR$ripsDiag[["diagram"]])
 ----
 
-== Medium Intensity on the Cell Boundary
+image:high-intensity-boundary-persistence-diagram.png[high-intensity-boundary-persistence-diagram]
+
+== 7 Medium Intensity on the Cell Boundary
 
 Here will will look at a cell with medium intensity around the cell boundary. For this example, one would expect the persistence diagram to have one blue point a moderate distance away from the diagonal.
 
@@ -233,6 +245,8 @@ mediumR  <- processImageStack(fp = mediumFP, trmAmnt = mediumT)
 image2D(mediumR$rawSlices,asp = 1, axes=FALSE, colkey = FALSE, xlab="", ylab="")
 ----
 
+image:.ob-jupyter/6a72aeb4cfa922b1a13d8ce307c4c35f4ff9e1fe.png[.ob-jupyter/6a72aeb4cfa922b1a13d8ce307c4c35f4ff9e1fe] image:.ob-jupyter/23d6e5932d96225e8e90b62ee260c9f81f367bdd.png[.ob-jupyter/23d6e5932d96225e8e90b62ee260c9f81f367bdd] image:.ob-jupyter/9f64bfb84a3da40403ae2aa24bb56114b7bbb36c.png[.ob-jupyter/9f64bfb84a3da40403ae2aa24bb56114b7bbb36c] image:.ob-jupyter/0f9aa8506b7a7e987089b7ce8a5b7e111d9ef6b9.png[.ob-jupyter/0f9aa8506b7a7e987089b7ce8a5b7e111d9ef6b9] image:.ob-jupyter/c68966819c74c8a9e898b1afab649b542d8d7e6e.png[.ob-jupyter/c68966819c74c8a9e898b1afab649b542d8d7e6e]
+
 [source,R,code]
 ----
 mediumR$cloudPlot
@@ -246,7 +260,9 @@ par(mfrow=c(1,1))
 plot(mediumR$ripsDiag[["diagram"]])
 ----
 
-== Low Intensity on the Cell Boundary
+image:medium-intensity-boundary-persistence-diagram.png[medium-intensity-boundary-persistence-diagram]
+
+== 8 Low Intensity on the Cell Boundary
 
 Here will will look at a cell with low intensity around the cell boundary. For this example, one would expect the persistence diagram to have no blue points except near the diagonal.
 
@@ -262,6 +278,8 @@ weakR  <- processImageStack(fp = weakFP, trmAmnt = weakT)
 image2D(weakR$rawSlices,asp = 1, axes=FALSE, colkey = FALSE, xlab="", ylab="")
 ----
 
+image:.ob-jupyter/72575b13c488ace9b29a98865952954bcc756d08.png[.ob-jupyter/72575b13c488ace9b29a98865952954bcc756d08] image:.ob-jupyter/3a568d6cf8e7ec4fb461f3d60eabf45aa466b73c.png[.ob-jupyter/3a568d6cf8e7ec4fb461f3d60eabf45aa466b73c] image:.ob-jupyter/83d94720740ebd19bd84c6ae8251ebf22c4ac13c.png[.ob-jupyter/83d94720740ebd19bd84c6ae8251ebf22c4ac13c] image:.ob-jupyter/48393dc450d10457a99295fae2ae25c9de7bdbef.png[.ob-jupyter/48393dc450d10457a99295fae2ae25c9de7bdbef] image:.ob-jupyter/83d4ebef82cb3c1dec43e774c3815824f072b087.png[.ob-jupyter/83d4ebef82cb3c1dec43e774c3815824f072b087]
+
 [source,R,code]
 ----
 weakR$cloudPlot
@@ -275,7 +293,9 @@ par(mfrow=c(1,1))
 plot(weakR$ripsDiag[["diagram"]])
 ----
 
-== Results Comparison
+image:weak-intensity-boundary.png[weak-intensity-boundary]
+
+== 9 Results Comparison
 
 [source,R,code]
 ----

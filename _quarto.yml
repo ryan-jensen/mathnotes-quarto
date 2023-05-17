@@ -76,7 +76,7 @@ website:
 
     right:
       - icon: github
-        href: https://github.com/ryan-jensen/mathnotes
+        href: https://github.com/ryan-jensen/mathnotes-quarto
 
 execute: 
   keep-md: true
